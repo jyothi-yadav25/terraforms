@@ -1,15 +1,4 @@
-terraform {
-  required_providers {
-    ibm = {
-      source = "IBM-Cloud/ibm"
-      version = "1.12.0"  
-    }
-  }
-}
 
-provider "ibm" {
-  ibmcloud_api_key = "ydLwWqBVoYlx11FvNH1SPcA8oMwkI0d8KpUS6wHat9VG"  
-}
 
 
 resource "null_resource" "example" {
