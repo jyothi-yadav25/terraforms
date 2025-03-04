@@ -9,7 +9,7 @@ terraform {
 
 provider "ibm" {
   region = "us-south"
-  ibmcloud_api_key = var.ibmcloud_api_key
+  ibmcloud_api_key = getenv("IBMCLOUD_API_KEY")
 }
 variable "ibmcloud_api_key" {}
 
