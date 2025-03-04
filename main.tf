@@ -11,7 +11,7 @@ provider "ibm" {
   region = "us-south"
   ibmcloud_api_key = getenv("IBMCLOUD_API_KEY")
 }
-variable "ibmcloud_api_key" {}
+
 
 
 resource "ibm_cd_toolchain" "cd_toolchain_instance" {
